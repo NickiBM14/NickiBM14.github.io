@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 32px;
+    background: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    animation: rotate 6s infinite alternate linear;
+  }
+  
+  @media (width >= 500px) {
+    body {
+      padding: 0;
+    }
+  }
+  
+  .background {
+    position: fixed;
+    top: -50vmin;
+    left: -50vmin;
+    width: 100vmin;
+    height: 100vmin;
+    border-radius: 47% 53% 61% 39% / 45% 51% 49% 55%;
+    background: #F86E15;
+  }
+  
+  .background::after {
+    content: "";
+    position: inherit;
+    right: -50vmin;
+    bottom: -55vmin;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: #f09559;
+  }
+  
+  .card {
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin: 0 20px;
+    padding: 170px 30px 54px;
+    border-radius: 1.25rem;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 100px 100px rgb(0 0 0 / 10%);
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    top: -880px;
+    left: 50%;
+    translate: -50% 0;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background: #cacaca;
+  }
+  
+  @media (width >= 500px) {
+    .card {
+      margin: 0;
+      width: 360px;
+    }
+  }
+  
+  .card .logo {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    translate: -50% 0;
+    width: 64px;
+    height: 64px;
+  }
+  
+  .card > h2 {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0 0 30px;
+    color: #2a3444;
+  }
+  
+  .register {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+}
+
+.register h2 {
+    color: #333;
+}
+
+#registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #f88f49;
+    color: #fff;
+    background-color: #F86E15;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Cambios de estilo al pasar el ratón sobre el botón */
+  button:hover {
+    background-color: #f88f49;
+  }
+  
+  .card > footer {
+    color: #a1a1a1;
+  }
+  
+  .card > footer > a {
+    color: #216ce7;
+  }

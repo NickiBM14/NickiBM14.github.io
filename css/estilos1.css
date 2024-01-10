@@ -267,6 +267,8 @@ tfoot{
     
 }
 
+/* lista *
+
 .editable-list {
     display: flex;
     flex-direction: column;
@@ -284,7 +286,7 @@ tfoot{
 }
 
 .add-row-btn {
-    display: block;
+    display: flex;
     margin: 10px auto;
     cursor: pointer;
 }

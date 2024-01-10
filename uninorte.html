@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal UNINORTE</title>
+    <link rel="shortcut icon" href="./images/Sello-Scala.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+                <li class="active">
+                    <a href="/index.html" >
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Viabilidad producto</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        <span>University profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Precio y competencia</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-star"></i>
+                        <span>Analisis producto</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <span>Precios y tendencia</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <span>Analisis mercados</span>
+                    </a>
+                </li>
+                <li class="logout">
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+    </div>
+
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span> Informacion </span>
+                <h2> Colombia </h2>
+            </div>
+            <div class="user--info">
+                <div class="searh--box">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" placeholder="Search">
+                </div>
+                <img src="./images/uni-logo-symbol.svg" alt="">
+            </div>
+        </div>
+
+        <div class="card--container">
+            <h3 class="main--title">PAISES</h3>
+            <div class="card--wrapper">
+                <div class="payment--card light-red">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                Alianza
+                            </span>
+                            <span class="amount--value">UNINORTE</span>
+                        </div>
+                        <img src="./images/uni-logo-symbol.svg" class="about__icon">
+                    </div>
+                    <a href="./uninorte.html" class="card-detail">Ingresa</a>
+                </div>
+                <div class="payment--card light-red">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                cambiar
+                            </span>
+                            <span class="amount--value">Alianza</span>
+                        </div>
+                        <img src="./images/bx-transfer.svg" class="about__icon">
+                    </div>
+                    <a href="./portalcolombia.html" class="card-detail">regresa</a>
+                
+            </div>
+        </div>
+
+        <div class="tabular--wrapper">
+            <h3 class="main--title">Investigaciones de Viabilidad de Producto</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Universidad</th>
+                            <th>Nombre progama</th>
+                            <th>Tipo Informacion</th>
+                            <th>Fecha</th>
+                            <th>Link</th>
+                            <th>Viabilidad</th>
+                            <th>Edit</th>
+                        </tr>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Conciliación</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1C6m3xYuFjkdf2w5a6JIskBCYf-heawWk/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>No viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Humanización</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1UtKvNrcthtmSk_qjDZ1PtLZ3vYcePWoX/edit#slide=id.p55" class="cta">Link</a></td>
+                                <td>No viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Urbanismo Social </td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/11PEaYvAQTYH62ZuHQr1LjlQRM2DCSSSo/edit#slide=id.p6" class="cta">Link</a></td>
+                                <td>No viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Posgrado Administración de la Energía </td>
+                                <td>Posgrados </td> 
+                                <td>2022</td>
+                                <td><a href="null" class="cta">Link off</a></td>
+                                <td>No viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización en Gestión de Activos Industrial</td>
+                                <td>Especialización </td> 
+                                <td>2022</td>
+                                <td><a href="null" class="cta">Link off</a></td>
+                                <td>No viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización en Ingeniería de Procesos Industriales (viabilidad)</td>
+                                <td>Especialización </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1kb49ta-_YHlq-QTVVTD-AJdBQxvhJhoJ/edit#slide=id.p2" class="cta">Link</a></td>
+                                <td>No viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización en Sistemas Electricos de Potencia (viabilidad)</td>
+                                <td>Especialización </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1P-b7ULvJPr8_dcp_s9YHGkJOP1habFyp/edit#slide=id.p2" class="cta">Link</a></td>
+                                <td>No viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Maestría en Enseñanza del Inglés </td>
+                                <td>Maestría </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1LDOSDEikeIzXUwP_XamzFV2Wvy5Si0_L/edit#slide=id.p2" class="cta">Link</a></td>
+                                <td>No viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Maestría en Comunicación Social </td>
+                                <td>Maestría </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1eQbpmw7JSKfyHjuz_9NjCJaF9KkTt2Bm/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>No viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Maestría en Comunicación Organizacional</td>
+                                <td>Maestría </td> 
+                                <td>2022</td>
+                                <td><a href="null" class="cta">Link off</a></td>
+                                <td>No viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Maestría en Intervención Psicosocial</td>
+                                <td>Maestría </td> 
+                                <td>2022</td>
+                                <td><a href="null" class="cta">Link off</a></td>
+                                <td>No viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Maestría en Hábitat del Caribe Sostenible</td>
+                                <td>Maestría </td> 
+                                <td>2023</td>
+                                <td><a href="null" class="cta">Link off</a></td>
+                                <td>No viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Maestría en Estadistica </td>
+                                <td>Maestría </td> 
+                                <td>2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1RIXuO6nc5VK8aA_x35S0OIBZMsrBF9Bo/edit#slide=id.p72" class="cta">Link</a></td>
+                                <td>No viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Arbitraje</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1ZVieH5gtpfo2H-pzokleIvzxNR5iFR7w/edit#slide=id.p5" class="cta">Link</a></td>
+                                <td>No viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Maestría en Pedagogía Social e Intervención Educativa</td>
+                                <td>Maestría </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1LIM4uwg5fTKQXnTfnyIUeyElyEQ2Pvn5/edit#slide=id.p2" class="cta">Link</a></td>
+                                <td>Propuesta por la universidad</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Potenciales en Salud</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1V5V2kspsqZ4hz1sInrNR6P1vQtqC5yYG/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>revisión general</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Posgrados Potenciales Arquitectura</td>
+                                <td>Posgrados </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/19Cw8JHvnCs55_m2QKg0ozVQ3fjXqhEhc/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>revisión general </td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Posibles Programas Uninorte Ciencias Sociales </td>
+                                <td>Maestría </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1qMs6thV_iIoQ2ely4e8qI9PzrL9DEoGY/edit#slide=id.g13d0cb37e05_0_113" class="cta">Link</a></td>
+                                <td>revisión general </td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en BIM</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1FTf51ZIjH1Hp4fjIMLYgDuScUP8K9CXR/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Desarrollo Full Stack</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1YM1750VLA8lF3gUUb0RV03DYPfiIr2lV/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Habilidades Gerenciales</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/12Z8bKnhpZ6HuiKz7hJZhgLd4ECdT5GeS/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Big Data</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1B4Qw2J3SG_yQB16uTCEnVmWVsf0_a4et/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Nutrición Infantil</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/19L68mpa_gAsLS-kk-lysqwk-mNW8TqwR/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Pedagogía Universitaria</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="null" class="cta">Link off</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Gestión del Riesgo</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="null" class="cta">Link off</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Comunicación digital</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="null" class="cta">Link off</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Gerencia de Calidad y Auditoría en Salud</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="null" class="cta">Link off</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Ciberseguridad</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="null" class="cta">Link off</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Ciencia de Datos y Machine</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1fWm7TEZBBAQdqXhysjMVpP_uTDyeg_aP/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Derecho Laboral y Seguridad Social</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1OX4CeL7dXMTn1kitVciH0HUIAPG6c-06/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Financas para no Financieros</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1m4CT2F8S_Ge9XDteS-ektM9cqmuBOc4R/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Key Account Manager</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="null" class="cta">Link off</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Marketing e Innovación Digital</td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1QEWPwGOrw_niHHX1TVFrpZ7HJv2ZHwYy/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Diplomado en Desarrollo de Software</td>
+                                <td>Diplomado </td> 
+                                <td>2023</td>
+                                <td><a href="null" class="cta">Link off</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización en Logistica Empresarial (viabilidad)</td>
+                                <td>Especialización </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/17x1nfghAbi7uhmGgB091L-NtxucKx_xp/edit#slide=id.p2" class="cta">Link off</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización en Comunicación Digital </td>
+                                <td>Especialización </td> 
+                                <td>2023</td>
+                                <td><a href="null" class="cta">Link off</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización en Dirección Estrategica Empresarial</td>
+                                <td>Especialización </td> 
+                                <td>2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1wuvV2MJUv9YGFg9iPz1B36s5sXufscWk/edit#slide=id.p28" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Maestría en Educación </td>
+                                <td>Maestría </td> 
+                                <td>2022</td>
+                                <td><a href="null" class="cta">Link off</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Maestría en Desarrollo Organizacional y Procesos Humanos</td>
+                                <td>Maestría </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1yARB7a5oARIxDYPWAyaTthJIzVJe1JTV/edit?usp=drive_web&ouid=115148727834267482168&rtpof=true" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Maestría en Pedagogía Universitaria</td>
+                                <td>Maestría </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1Mz5LSZX5OVgo1Qi8oQq1Pw3rXWsaYC5e/edit?usp=drive_web&ouid=115148727834267482168&rtpof=true" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Maestría en Dirección Estrategica</td>
+                                <td>Maestría </td> 
+                                <td>2022</td>
+                                <td><a href="null" class="cta">Link off</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Maestría en Educación Medidas por las TIC </td>
+                                <td>Diplomado </td> 
+                                <td>2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1QvGSamF0HhFQW9HsEUEqhTuriUchofOu/edit#slide=id.p2" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Maestría en Comunicación Digital </td>
+                                <td>Maestría </td> 
+                                <td>2023</td>
+                                <td><a href="null" class="cta">Link off</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización y Maestría en Economia Sostenible (Economía Circular)</td>
+                                <td>Posgrados </td> 
+                                <td>2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1XXgcUMc6qdilItWXjAAB6ThI4-TF4mTE/edit#slide=id.g1ea69fd728f_0_739" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización y Maestría en Diseño y Evaluación de Proyectos </td>
+                                <td>Posgrados </td> 
+                                <td>2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1rapeZdW2RPJleCewb3PBqE0ZSdDnTU9_/edit#slide=id.g1ea69fd728f_0_619" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización y Maestría en Planificación Territorial y Finanzas Públicas</td>
+                                <td>Posgrados </td> 
+                                <td>2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1O8JkogHgIv5CgC8P0tuf-v0vyz8oB5kM/edit#slide=id.g25fe4ad5d47_0_173" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización y Maestría en Matemáticas</td>
+                                <td>Posgrados </td> 
+                                <td>2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1T_bAKdzohUDv0H1_-4LN7NcWOA_UCMfp/edit#slide=id.g1ea69fd728f_0_739" class="cta">Link</a></td>
+                                <td>No viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización y  Maestría  en Diseño e Innovación de Servicios </td>
+                                <td>Posgrados </td> 
+                                <td>2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1ZAszak3pTGhtEs08ydpCZXr6cYIfsnJO/edit#slide=id.g1ea69fd728f_0_739" class="cta">Link</a></td>
+                                <td>No viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización y  Maestría en Mercado Digital </td>
+                                <td>Posgrados </td> 
+                                <td>2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1sOF2U1dkXTqnZVhfQ64Kl8G0oytt2VQp/edit#slide=id.g1ea69fd728f_0_739" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización y Maestría  Big data y Análisis de Datos </td>
+                                <td>Posgrados </td> 
+                                <td>2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1eyZtaoCHeiIE2af7lwSDa5R3FwzDoqWx/edit#slide=id.g1eb48fe35e7_1_0" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización y Maestría  en Ingenieria de Software </td>
+                                <td>Posgrados </td> 
+                                <td>2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1eyZtaoCHeiIE2af7lwSDa5R3FwzDoqWx/edit#slide=id.g1eb48fe35e7_1_0" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización y Maestría en Transformación Digital </td>
+                                <td>Posgrados </td> 
+                                <td>2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/18tGdxcMaLoPRxd-_jibfTGbmar50N23Y/edit#slide=id.g1ea69fd728f_0_132" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización y Maestría en Gerencia de Proyectos de Construcción </td>
+                                <td>Posgrados </td> 
+                                <td>2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1-sRNgZcOCeroGXu0ABvnxdb4pD62LDZT/edit#slide=id.g1ea69fd728f_0_51" class="cta">Link</a></td>
+                                <td>No viable*</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización y Maestría en Gerencias de Tecnología de la Información</td>
+                                <td>Posgrados </td> 
+                                <td>2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1aBgeTKwzUWcwDCvsd9Bd652EaZpkM9hr/edit#slide=id.g1ea69fd728f_0_619" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización y Maestría en Dirección Estratégica Empresarial</td>
+                                <td>Posgrados </td> 
+                                <td>2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/139tBnXzrCX0j-C3sxjY5hCDI6t4pC5sy/edit#slide=id.g1ea69fd728f_0_619" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización y Maestría en Gerencia de la Calidad y Auditoría en Salud 
+                                </td>
+                                <td>Posgrados </td> 
+                                <td>2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1MuBbWveJGiRxSHiRXG39F_CXRNwl7e3w/edit#slide=id.g2601a95286b_0_346" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad del Norte</td>
+                                <td>Especialización en Seguridad y Salud en el Trabajo Uninorte</td>
+                                <td>Posgrados </td> 
+                                <td>2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1mn75aVEFHu_AVCaM2qepDRmh_rVghV3K/edit#slide=id.g25fe4ad5d47_0_173" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                                        
+                    </thead>
+                </table>      
+            </div>
+</body>
+</html>

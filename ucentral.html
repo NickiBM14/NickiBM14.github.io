@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Ucentral</title>
+    <link rel="shortcut icon" href="./images/Sello-Scala.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+                <li class="active">
+                    <a href="/index.html" >
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Viabilidad producto</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        <span>University profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Precio y competencia</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-star"></i>
+                        <span>Analisis producto</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <span>Precios y tendencia</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <span>Analisis mercados</span>
+                    </a>
+                </li>
+                <li class="logout">
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+    </div>
+
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span> Informacion </span>
+                <h2> Colombia </h2>
+            </div>
+            <div class="user--info">
+                <div class="searh--box">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" placeholder="Search">
+                </div>
+                <img src="./images/Universidad Central.png" alt="">
+            </div>
+        </div>
+
+        <div class="card--container">
+            <h3 class="main--title">PAISES</h3>
+            <div class="card--wrapper">
+                <div class="payment--card light-red">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                Alianza
+                            </span>
+                            <span class="amount--value">Universidad Central</span>
+                        </div>
+                        <img src="./images/Universidad Central.png" class="about__icon">
+                    </div>
+                    <a href="./ucentral.html" class="card-detail">Ingresa</a>
+                </div>
+                <div class="payment--card light-red">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                cambiar
+                            </span>
+                            <span class="amount--value">Alianza</span>
+                        </div>
+                        <img src="./images/bx-transfer.svg" class="about__icon">
+                    </div>
+                    <a href="./portalcolombia.html" class="card-detail">regresa</a>
+                
+            </div>
+        </div>
+
+        <div class="tabular--wrapper">
+            <h3 class="main--title">Investigaciones de Viabilidad de Producto</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Universidad</th>
+                            <th>Nombre progama</th>
+                            <th>Tipo Informacion</th>
+                            <th>Fecha</th>
+                            <th>Link</th>
+                            <th>Viabilidad</th>
+                            <th>Edit</th>
+                        </tr>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Diplomado en Desarrollo Humano</td>
+                                <td>Diplomado </td> 
+                                <td>Julio 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1JkUEnPLGyhE3LuD7SLtOGpg_CuvZ0Mwz/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Diplomado en Economia Circular</td>
+                                <td>Diplomado </td> 
+                                <td>Junio 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/18vY_CzLHBF7Uv7mGomNH5p7kK381yLxl/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>No Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Diplomado en Gerencia de Empresas Sociales</td>
+                                <td>Diplomado </td> 
+                                <td>Julio 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/19GjqSExAK0QN-SthtM2GbuYte-1nrH2h/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>No Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Diplomado en Pedagogía</td>
+                                <td>Diplomado </td> 
+                                <td>Julio 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1h_0sWUFKOhdw32StbbdGS3MspMDeKTvG/edit#slide=id.p18" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Diplomado en Sexualidad</td>
+                                <td>Diplomado </td> 
+                                <td>Julio 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1dM5vPseKVAH9ntkVD_5_dvS1sVzHZpdb/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>No Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Diplomado en Sostenibilidad</td>
+                                <td>Diplomado </td> 
+                                <td>Julio 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/15B4i3ExZkCK3xPHteLkXJttre-oORG4r/edit?rtpof=true" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Diplomado en KAM</td>
+                                <td>Diplomado </td> 
+                                <td>Octubre 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1lx9EJvCnA8_P7r8fvAX37fRWHX3fEDMy/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Diplomado en BIM</td>
+                                <td>Diplomado </td> 
+                                <td>Mayo 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/15uC6gbc06fFQq2ErU3ScHNler25j6ug9/edit#slide=id.p4" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Diplomado en Potenciales en Salud</td>
+                                <td>Diplomado </td> 
+                                <td>Septiembre 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1wiZzr8aGvfiLU7SziFGr0f0SSAxnYWZq/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Se realizo solicitud por parte de la universidad son varios programas relacionados con salud </td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Diplomados Potenciales en Ciencias del Cuidado</td>
+                                <td>Diplomado </td> 
+                                <td>Octubre 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1VD6v6tbYBfJDWp_3ZXP1rejDSyfQjbQb/edit#slide=id.p15" class="cta">Link</a></td>
+                                <td>Se realizo solicitud por parte de la universidad son varios programas relacionados con salud</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Diplomado en Compliance</td>
+                                <td>Diplomado </td> 
+                                <td>Abril 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1qQRHSEReATuZk9-nLk44ntvaj0tGyufZ/edit#slide=id.p43" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Curso y Diplomados Potenciales Nutrición</td>
+                                <td>Curso/Diplomados</td> 
+                                <td>Septiembre 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1845Lsx1cEEYufqGIymTOV710QoaviwsI/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Se realizo solicitud por parte de la universidad son varios programas relacionados con nutrición</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Bi Español para Extranjeros</td>
+                                <td>Curso/Diplomados</td> 
+                                <td>Abril 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1In2wF7LKV-d8LfFWf1ZWEYljSfI_p0RA/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>No Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Diplomado en Finanzas para no Financieros</td>
+                                <td>Diplomado </td> 
+                                <td>Octubre 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1nMlnFvXX_HTGJI8XAF2LZZ_l8ZU8iH9I/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Diplomado en Full Stack</td>
+                                <td>Diplomado </td> 
+                                <td>Octubre 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1DWSt73XVpidwgml96QBB9NayR-gim6IR/edit#slide=id.p9" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Diplomado viabilidad en Gobierno Corporativo y Juntas Directivas</td>
+                                <td>Diplomado </td> 
+                                <td>Mayo 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1hkQDbkxzpXgC5PYPkkliL0imujqB1yiH/edit#slide=id.p46" class="cta">Link</a></td>
+                                <td>No Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Diplomado en Ciberseguridad</td>
+                                <td>Diplomado </td> 
+                                <td>Octubre 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/15AFqLsLDsFrOmcAq6AFZjKZ9bcxL_HdY/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Especialización en Riesgos</td>
+                                <td>Especialización </td> 
+                                <td>Junio 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/10-OUawKQMSVd8liiqg5dy1T1IMgKcqRx/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Especialización en Dirección de Operaciones y Logística </td>
+                                <td>Especialización</td> 
+                                <td>Febrero 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1AXyAwKIjOrz5CdyXu4poruhG-M-_zsUy/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Justificación BI Especialización en Epidemiología Eafit</td>
+                                <td>Especialización</td> 
+                                <td>Febrero 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1HZgvuge0Y170tA8Qmu0M2259fR1VW7XT/edit#slide=id.g1ddb13fabe0_1_86" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Especialización en Epidemiología</td>
+                                <td>Especialización</td> 
+                                <td>Febrero 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1gPikkNbExgNb9_00QV59-N2Tvl_YtHrW/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Especialización en Gerencia de Diseño de Producto</td>
+                                <td>Especialización</td> 
+                                <td>Enero 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1-l3qJzMkVsEMAzEPNTCNs0kckF1h1uKH/edit" class="cta">Link</a></td>
+                                <td>No Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Especialización en Gestión Pública</td>
+                                <td>Especialización /Maestría</td> 
+                                <td>Septiembre 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1lD50_C64QHVl0enqhmNQnRbB1mAqiRtP/edit?pli=1#slide=id.p11" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Especialización en Gestión Pública Municipal</td>
+                                <td>Especialización</td> 
+                                <td>Marzo 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1rYzJxpQQWhnuTm51NLkg8OGUDCppJrme/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>No Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Especialización en Telesalud</td>
+                                <td>Especialización</td> 
+                                <td>Mayo 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1mALlcjrb2N9qWcPuccAqP_OeT2UJWxv6/edit" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Especialización en Seguridad y Salud en el Trabajo</td>
+                                <td>Especialización</td> 
+                                <td>Febrero 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1P_PoyMoTVC5kD29nu7d1S5Khxo5gRJ8N/edit?usp=drive_web&ouid=115148727834267482168&rtpof=true" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Justificación Especialización en Gestión Pública EAFIT</td>
+                                <td>Especialización</td> 
+                                <td>Marzo 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1Rm__degYdL-AGP7mrRx45ioXJzJfW_w3/edit?rtpof=true" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Especialización en Desarrollo de Software</td>
+                                <td>Especialización</td> 
+                                <td>2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1fZ4LvrP1ET9mg6c4zGouT_JS52Guo2Yu/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Maestría en Comunicación Transmedia</td>
+                                <td>Maestría</td> 
+                                <td>Febrero 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1Qhcg6hnUuoka6BhBnTzq7FXW4zY89_vm/edit?usp=drive_web&ouid=115148727834267482168&rtpof=true" class="cta">Link</a></td>
+                                <td>No Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Maestría en Comunicación Transmedia Ajustado </td>
+                                <td>Maestría</td> 
+                                <td>Septiembre 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/10ubpGmy6Wc2I5a02XY8gkfKXDwZ0EA_v/edit?rtpof=true" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Maestría Diseño de Experiencia y Aprendizaje </td>
+                                <td>Maestría</td> 
+                                <td>Febrero 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/15hLd8xWvKcnTrSasp7aPqk72eUO3l_a0/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>No Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Maestría en Estudios del Comportamiento</td>
+                                <td>Maestría</td> 
+                                <td>Febrero 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1zYVUvCmIBrGg8DlkL7f9djqcYUyGUNmJ/edit?usp=drive_web&ouid=115148727834267482168&rtpof=true" class="cta">Link</a></td>
+                                <td>No Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Posgrado Maestría en Riesgos EAFIT</td>
+                                <td>Maestría</td> 
+                                <td>Junio 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/19A3fmFDTOKfUhxUNLg-MG5xr9xpCVr2M/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Posgrado en Diseño de Experiencia y Aprendizaje </td>
+                                <td>Especialización /Maestría</td> 
+                                <td>Septiembre 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/10Qbww1_Bih-CkaYfTHj95m43Czt8J0Fi/edit?rtpof=true" class="cta">Link</a></td>
+                                <td>No Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Posgrado Gerencia en Instituciones de la Salud</td>
+                                <td>Especialización /Maestría</td> 
+                                <td>Septiembre 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1ZdsVQJFWu45msbB4fDswTy8tbzGh_SVN/edit#slide=id.g27b44bd4041_1_670" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Posgrado en Desarrollo Humano</td>
+                                <td>Especialización /Maestría</td> 
+                                <td>Septiembre 2023</td>
+                                <td><a href="https://docs.google.com/presentation/d/1RPuMEdq72KLBf7OwtcH02_Q7KH2dUxgz/edit#slide=id.p1" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Modelo viabilidad programas  EAFIT  Maestría Sostenibilidad v1</td>
+                                <td>Maestría</td> 
+                                <td>Mayo 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1BHRWpM8rCIUGMhg-hb_ClDaM1ig_RO9G/edit#slide=id.p2" class="cta">Link</a></td>
+                                <td>Viable</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>Universidad EAFIT</td>
+                                <td>Maestría en Lectura y Escritura </td>
+                                <td>Maestría</td> 
+                                <td>Septiembre 2022</td>
+                                <td><a href="https://docs.google.com/presentation/d/1jITTVqrkZ8oCtpcUPpIzBdFdb-KQya0g/edit?rtpof=true" class="cta">Link</a></td>
+                                <td>Incluida por parte de la universidad</td>
+                                <td><button onclick="editRow(this)">Edit</button></td>
+                            </tr>
+                        </tbody>                        
+                    </thead>
+                </table>      
+        </div>
+</body>
+</html>
